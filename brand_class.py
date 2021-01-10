@@ -26,14 +26,17 @@ class Season:
 
 
 class Product(Country, Brand, Season):
-	def __init__(self, name, type_, price, quantity):
+	def __init__(self, county_name, capital, brand_name, start_hour, season_name, avg_tmp, name, type_, price, quantity):
+		Country.__init__(self, county_name, capital)
+		Brand.__init__(self, brand_name, start_hour)
+		Season.__init__(self, season_name, avg_tmp)
 		self.name = name
 		self.type_ = type_
 		self.price = price
 		self.quantity = quantity
 
 	def present(self):
-		return f"This is a {self.name}, it costs {self.price} and theres {self.quantity} left."
+		return f"This is a {self.name}, it costs {self.price} and it comes from {self.country_name}, and its for {self.season_name}"
 
 	def discount(self, prescent):
 		self.price = self.price * prescent / 100

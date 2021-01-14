@@ -15,13 +15,15 @@ class HouseHeating:
 
 	def goal_satisfy(self):
 		if self.temp == self.goal_temp:
-			return f"The goal temprature` {self.goal_temp} is satisfied."
+			message = f"The goal temprature` {self.goal_temp} is satisfied."
 		elif self.temp < self.goal_temp:
-			return f"The temprature is lower than the goal temprature` {self.goal_temp} raise it by {self.goal_temp - self.temp}."
+			message = f"The temprature is lower than the goal temprature` {self.goal_temp} raise it by {self.goal_temp - self.temp}."
 		else:
-			return f"The temprature is higher than the goal temprature` {self.goal_temp} lower it by {self.temp - self.goal_temp}."
+			message = f"The temprature is higher than the goal temprature` {self.goal_temp} lower it by {self.temp - self.goal_temp}."
 
-	
+		return message
+
+
 def check_houses(houses):
 	norm = 0
 	for house in houses:

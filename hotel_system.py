@@ -73,22 +73,22 @@ rooms = {
 }
 
 lux_rooms = {
-	"room1":"free", 
+	"room1":"free",
 	"room2":"busy",
 }
 
-# a = Hotel("My Hotel", "Garni Gexard", rooms, lux_rooms)
+a = Hotel("My Hotel", "Garni Gexard", rooms, lux_rooms)
 
-# print(a.presentation())
+print(a.presentation())
 
-# print(a.check_room("room2"))
-# print(a.booking("room2"))
-# print(a.check_room("room2"))
+print(a.check_room("room2"))
+print(a.booking("room2"))
+print(a.check_room("room2"))
 
-# print(a.discount(15))
+print(a.discount(15))
 
-# a.list_all_rooms()
+a.list_all_rooms()
 
-# tour = Tour("My Tour", "My Hotel", "Garni", rooms, lux_rooms, "Taski", "merc")
+tour = Tour("My Tour", "My Hotel", "Garni", rooms, lux_rooms, "Taski", "merc")
 
-# print(tour.presentation())
+print(tour.presentation())

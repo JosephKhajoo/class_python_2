@@ -10,7 +10,7 @@ class HouseHeating:
 		return self.temp
 
 	def set_temps(self, new_tmp):
-		self.temp = new_tmp
+		self.goal_temp = new_tmp
 		return f"Temprature set to: {self.temp}"
 
 	def goal_satisfy(self):
